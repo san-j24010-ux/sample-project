@@ -41,15 +41,12 @@
     }
 
     .avatar {
-      display: grid;
-      place-items: center;
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      color: #fff;
-      font-size: 42px;
-      font-weight: 700;
-      background: linear-gradient(135deg, #24746b, #4257b2);
+      object-fit: cover;
+      border: 4px solid #fff;
+      box-shadow: 0 10px 24px rgba(38, 52, 77, 0.18);
     }
 
     h1,
@@ -143,7 +140,7 @@
   <main>
     <article class="profile">
       <header class="hero">
-        <div class="avatar" aria-hidden="true">J</div>
+        <img class="avatar" src="profile-icon.png" alt="j24010のアイコン">
         <div>
           <h1>j24010</h1>
           <p class="lead">ものづくりと学びを楽しむ学生です。小さく試して、動くものに育てていくことが好きです。</p>
