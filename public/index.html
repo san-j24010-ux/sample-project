@@ -1,1 +1,191 @@
-<h1>j24010</h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>j24010の自己紹介</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Hiragino Sans", "Yu Gothic", sans-serif;
+      color: #222;
+      background: #f5f7fb;
+      line-height: 1.7;
+    }
+
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0;
+    }
+
+    .profile {
+      display: grid;
+      gap: 28px;
+      padding: 40px;
+      background: #fff;
+      border: 1px solid #dfe5ef;
+      border-radius: 8px;
+      box-shadow: 0 18px 45px rgba(38, 52, 77, 0.08);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .avatar {
+      display: grid;
+      place-items: center;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      color: #fff;
+      font-size: 42px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #24746b, #4257b2);
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+      line-height: 1.3;
+    }
+
+    h1 {
+      font-size: clamp(32px, 6vw, 56px);
+    }
+
+    h2 {
+      padding-bottom: 8px;
+      font-size: 22px;
+      border-bottom: 2px solid #e6ebf3;
+    }
+
+    p {
+      margin: 10px 0 0;
+    }
+
+    .lead {
+      color: #526071;
+      font-size: 18px;
+    }
+
+    .section {
+      display: grid;
+      gap: 12px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .tags li {
+      padding: 8px 12px;
+      color: #1f4d49;
+      background: #e8f4f1;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    .info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .info div {
+      padding: 16px;
+      background: #f7f9fc;
+      border: 1px solid #e3e8f0;
+      border-radius: 8px;
+    }
+
+    .info dt {
+      color: #657386;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .info dd {
+      margin: 4px 0 0;
+      font-weight: 700;
+    }
+
+    @media (max-width: 680px) {
+      main {
+        padding: 24px 0;
+      }
+
+      .profile {
+        padding: 24px;
+      }
+
+      .hero,
+      .info {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="profile">
+      <header class="hero">
+        <div class="avatar" aria-hidden="true">J</div>
+        <div>
+          <h1>j24010</h1>
+          <p class="lead">ものづくりと学びを楽しむ学生です。小さく試して、動くものに育てていくことが好きです。</p>
+        </div>
+      </header>
+
+      <section class="section" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <p>
+          Web制作やプログラミングを中心に、アイデアを形にする勉強をしています。
+          見やすく、使いやすく、触っていて気持ちのよいページを作れるようになることが目標です。
+        </p>
+      </section>
+
+      <section class="section" aria-labelledby="likes-title">
+        <h2 id="likes-title">好きなこと</h2>
+        <ul class="tags">
+          <li>HTML / CSS</li>
+          <li>JavaScript</li>
+          <li>デザイン</li>
+          <li>新しい技術の勉強</li>
+        </ul>
+      </section>
+
+      <section class="section" aria-labelledby="info-title">
+        <h2 id="info-title">プロフィール</h2>
+        <dl class="info">
+          <div>
+            <dt>名前</dt>
+            <dd>j24010</dd>
+          </div>
+          <div>
+            <dt>興味</dt>
+            <dd>Webアプリ制作</dd>
+          </div>
+          <div>
+            <dt>目標</dt>
+            <dd>伝わるUIを作る</dd>
+          </div>
+        </dl>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
