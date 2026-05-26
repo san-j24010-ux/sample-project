@@ -96,6 +96,23 @@
       font-weight: 600;
     }
 
+    .link-button {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      padding: 10px 16px;
+      color: #fff;
+      background: #24746b;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .link-button:hover,
+    .link-button:focus {
+      background: #1c5d56;
+    }
+
     .info {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -159,6 +176,11 @@
         <ul class="tags">
           <li>音楽</li>
         </ul>
+      </section>
+
+      <section class="section" aria-labelledby="links-title">
+        <h2 id="links-title">リンク</h2>
+        <a class="link-button" href="https://www.pixiv.net/users/123813140" target="_blank" rel="noopener noreferrer">pixiv</a>
       </section>
 
       <section class="section" aria-labelledby="info-title">
